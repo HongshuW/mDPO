@@ -9,11 +9,12 @@ import torch.distributed
 import transformers
 from accelerate.utils import DistributedType
 from peft import LoraConfig, prepare_model_for_kbit_training
-from transformers import GPTQConfig, deepspeed
+from transformers import GPTQConfig
+import deepspeed
 from transformers.trainer_pt_utils import LabelSmoother
 
-from bunny.modeling_bunny_phi import mDPOBunnyPhiForCausalLM
-from bunny.data_collator_bunny_phi import mDPODataCollatorBunny
+from modeling_bunny_phi import mDPOBunnyPhiForCausalLM
+from data_collator_bunny_phi import mDPODataCollatorBunny
 from mdpo_trainer import mDPOTrainer
 
 

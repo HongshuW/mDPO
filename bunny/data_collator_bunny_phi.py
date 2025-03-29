@@ -3,7 +3,7 @@ from typing import Dict, List, Any
 from trl.trainer.utils import DPODataCollatorWithPadding
 from PIL import Image
 
-from bunny.bunny_utils.util.mm_utils import tokenizer_image_token
+from bunny_utils.util.mm_utils import tokenizer_image_token
 
 
 @dataclass
